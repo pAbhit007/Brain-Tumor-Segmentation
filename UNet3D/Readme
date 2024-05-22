@@ -1,0 +1,4 @@
+The U-Net 3D model is a deep learning architecture specifically designed for volumetric image segmentation.
+Instead of 2D convolutions, it uses 3D convolutions, which process volumetric data in three dimensions, capturing spatial hierarchies and context within the entire volume.
+It is widely used for 3D segmentation tasks in medical imaging, such as tumor segmentation, organ delineation, and brain lesion detection, due to its ability
+to handle the complexity and depth of 3D images.

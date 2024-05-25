@@ -1,0 +1,21 @@
+Dataset Overview:
+
+Total number of images: 3064
+Total number of patients: 233
+Types of brain tumors: Meningioma, Glioma, Pituitary tumor
+Distribution of slices:
+Meningioma: 708 slices
+Glioma: 1426 slices
+Pituitary tumor: 930 slices
+Data format: MATLAB (.mat)
+Data split: Split into 4 subsets, each in a separate .zip file, with each .zip file containing 766 slices
+Cross-validation: 5-fold cross-validation indices provided
+Structure of Each .mat File:
+
+# Each .mat file contains a struct with the following fields for an image:
+cjdata.label: 1 for meningioma, 2 for glioma, 3 for pituitary tumor
+cjdata.PID: Patient ID
+cjdata.image: Image data
+cjdata.tumorBorder: A vector storing the coordinates of discrete points on tumor border. Format: [x1, y1, x2, y2, ...]
+cjdata.tumorMask: A binary image with 1s indicating tumor region
+This structure allows for easy access to key information about each image, including its label, patient ID, image data, tumor border coordinates, and tumor mask.
